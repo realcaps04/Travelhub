@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover amazing travel destinations worldwide. Plan, book, and explore with our travel platform.">
+    <title>Travel Haven - Discover Your Next Adventure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="#" class="nav__logo">✈️ Travel Haven</a>
+            </div>
+            <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav__menu">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#destinations" class="nav__link">Destinations</a></li>
+                <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero__overlay"></div>
+            <div class="hero__content container">
+                <h1 class="hero__title">Discover Your Next Adventure</h1>
+                <p class="hero__tagline">Plan, book, and explore amazing destinations worldwide</p>
+                <a href="#destinations" class="btn btn--primary">Start Planning</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section__title">Why Choose Us</h2>
+                <div class="features__grid">
+                    <div class="feature__card">
+                        <div class="feature__icon">📋</div>
+                        <h3 class="feature__title">Smart Itinerary Planner</h3>
+                        <p class="feature__description">Create personalized travel plans with our intelligent itinerary builder that adapts to your preferences.</p>
+                    </div>
+                    <div class="feature__card">
+                        <div class="feature__icon">✈️</div>
+                        <h3 class="feature__title">Real-time Flight Updates</h3>
+                        <p class="feature__description">Stay informed with instant notifications about flight delays, gate changes, and schedule updates.</p>
+                    </div>
+                    <div class="feature__card">
+                        <div class="feature__icon">👥</div>
+                        <h3 class="feature__title">Local Guide Connections</h3>
+                        <p class="feature__description">Connect with experienced local guides who know the hidden gems and authentic experiences.</p>
+                    </div>
+                    <div class="feature__card">
+                        <div class="feature__icon">🔒</div>
+                        <h3 class="feature__title">Secure Booking Guarantee</h3>
+                        <p class="feature__description">Book with confidence knowing your transactions are protected with industry-leading security.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinations" class="destinations">
+            <div class="container">
+                <h2 class="section__title">Popular Destinations</h2>
+                <div class="destinations__grid">
+                    <div class="destination__card">
+                        <div class="destination__image-wrapper">
+                            <img src="images/destination1.jpg" alt="Bali Paradise - Beautiful beaches and tropical scenery" class="destination__image">
+                        </div>
+                        <div class="destination__content">
+                            <h3 class="destination__title">Bali Paradise</h3>
+                            <p class="destination__description">Experience the ultimate tropical getaway with pristine beaches, lush rice terraces, and vibrant cultural traditions that make Bali a dream destination for travelers seeking both relaxation and adventure.</p>
+                            <a href="#" class="btn btn--secondary">Explore</a>
+                        </div>
+                    </div>
+                    <div class="destination__card">
+                        <div class="destination__image-wrapper">
+                            <img src="images/destination2.jpg" alt="Tokyo Adventures - Modern cityscape and traditional culture" class="destination__image">
+                        </div>
+                        <div class="destination__content">
+                            <h3 class="destination__title">Tokyo Adventures</h3>
+                            <p class="destination__description">Immerse yourself in the perfect blend of cutting-edge technology and ancient traditions. From neon-lit streets to serene temples, Tokyo offers an unforgettable urban adventure.</p>
+                            <a href="#" class="btn btn--secondary">Explore</a>
+                        </div>
+                    </div>
+                    <div class="destination__card">
+                        <div class="destination__image-wrapper">
+                            <img src="images/destination3.jpg" alt="Santorini Magic - Stunning sunsets and white-washed buildings" class="destination__image">
+                        </div>
+                        <div class="destination__content">
+                            <h3 class="destination__title">Santorini Magic</h3>
+                            <p class="destination__description">Witness breathtaking sunsets over the Aegean Sea while staying in iconic white-washed buildings perched on volcanic cliffs. A romantic paradise for couples and dreamers.</p>
+                            <a href="#" class="btn btn--secondary">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section__title">Get In Touch</h2>
+                <form id="contactForm" class="contact__form" novalidate>
+                    <div class="form__group">
+                        <label for="name" class="form__label">Name <span class="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            class="form__input" 
+                            required
+                            aria-required="true"
+                            aria-describedby="name-error"
+                        >
+                        <span id="name-error" class="form__error" role="alert"></span>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email <span class="required">*</span></label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="form__input" 
+                            required
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                            aria-required="true"
+                            aria-describedby="email-error"
+                        >
+                        <span id="email-error" class="form__error" role="alert"></span>
+                    </div>
+                    <div class="form__group">
+                        <label for="message" class="form__label">Message <span class="required">*</span></label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            class="form__textarea" 
+                            rows="5" 
+                            required
+                            aria-required="true"
+                            aria-describedby="message-error"
+                        ></textarea>
+                        <span id="message-error" class="form__error" role="alert"></span>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Get Updates</button>
+                </form>
+                <div id="successMessage" class="success-message" role="alert" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">Travel Haven</h3>
+                    <p class="footer__description">Your trusted partner for unforgettable travel experiences around the globe.</p>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Follow Us</h4>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2024 Travel Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
